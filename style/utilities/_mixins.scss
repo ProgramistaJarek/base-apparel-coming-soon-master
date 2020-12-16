@@ -1,0 +1,35 @@
+@mixin raleway400 {
+  font-family: $font-raleway;
+  font-size: $font-size;
+  font-weight: $font-400;
+}
+
+@mixin openSans400 {
+  font-family: $font-openSans;
+  font-size: $font-size;
+  font-weight: $font-400;
+}
+
+@mixin raleway700 {
+  font-family: $font-raleway;
+  font-size: $font-size;
+  font-weight: $font-700;
+}
+
+@mixin openSans700 {
+  font-family: $font-openSans;
+  font-size: $font-size;
+  font-weight: $font-700;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

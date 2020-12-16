@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 158px;
+  height: 33px;
+  margin: 1.5rem 2rem;
+}
+
+.woman {
+  background: url("/images/hero-mobile.jpg") no-repeat;
+  min-height: 250px;
+  background-size: cover;
+}
+
+article {
+  background: white;
+  background: linear-gradient(135deg, white 0%, #fff5f5 100%);
+}
+article h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 2.5rem;
+  color: #ce9797;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+  letter-spacing: 0.5rem;
+  margin: 2rem 0;
+}
+article h1 strong {
+  color: #413a3a;
+}
+article p {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ce9797;
+  text-align: center;
+  margin: 0 1.18rem;
+  line-height: 1.4rem;
+}
+article form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2rem 1.18rem;
+  width: calc(100% - 2.36rem);
+  border: 1px solid #ce9797;
+  border-radius: 2rem;
+  background: white;
+  background: linear-gradient(135deg, white 0%, #fff5f5 100%);
+}
+article form input[type=text] {
+  width: 100%;
+  padding: 1rem;
+  background: none;
+  border: 0;
+}
+article form input[type=text]:focus {
+  outline: none;
+}
+article form input[type=text]::placeholder {
+  color: #ce9797;
+}
+article form button {
+  border: none;
+  border-radius: 2rem;
+  width: 5rem;
+  background: #f8bfbf;
+  background: linear-gradient(135deg, #f8bfbf 0%, #ee8c8c 100%);
+}
+
+/*# sourceMappingURL=style.css.map */
