@@ -9,18 +9,46 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .logo {
   width: 158px;
   height: 33px;
   margin: 1.5rem 2rem;
 }
 
+@media (min-width: 1024px) {
+  .logo {
+    margin: 4rem 0;
+  }
+}
 .woman {
   background: url("/images/hero-mobile.jpg") no-repeat;
   min-height: 250px;
   background-size: cover;
 }
 
+@media (min-width: 768px) {
+  .woman {
+    min-height: 350px;
+  }
+}
+@media (min-width: 1024px) {
+  .woman {
+    background: url("/images/hero-desktop.jpg") no-repeat;
+    background-size: cover;
+    min-height: 600px;
+  }
+}
+@media (min-width: 1440px) {
+  .woman {
+    min-height: 800px;
+  }
+}
 article {
   background: white;
   background: linear-gradient(135deg, white 0%, #fff5f5 100%);
@@ -59,6 +87,13 @@ article form {
   background: white;
   background: linear-gradient(135deg, white 0%, #fff5f5 100%);
 }
+article form input:-webkit-autofill,
+article form input:-webkit-autofill:hover,
+article form input:-webkit-autofill:focus,
+article form input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: black !important;
+}
 article form input[type=text] {
   width: 100%;
   padding: 1rem;
@@ -77,6 +112,63 @@ article form button {
   width: 5rem;
   background: #f8bfbf;
   background: linear-gradient(135deg, #f8bfbf 0%, #ee8c8c 100%);
+}
+
+@media (min-width: 1024px) {
+  article h1 {
+    text-align: left;
+    font-size: 3rem;
+    line-height: 3rem;
+    letter-spacing: 1rem;
+  }
+  article p {
+    text-align: left;
+    margin: 0;
+    margin-right: 5rem;
+  }
+  article form {
+    justify-content: left;
+    margin: 2rem 0;
+    margin-right: 5rem;
+    width: calc(100% - 5rem);
+  }
+  article form button {
+    width: 7rem;
+    background: #f8bfbf;
+    background: linear-gradient(135deg, #f8bfbf 0%, #ee8c8c 100%);
+  }
+  article form button:hover {
+    outline: none;
+    cursor: pointer;
+    background: linear-gradient(135deg, rgba(248, 191, 191, 0.5) 0%, rgba(238, 140, 140, 0.5) 100%);
+    box-shadow: 0px 0px 58px 1px #cca2a2;
+  }
+}
+@media (min-width: 1024px) {
+  section {
+    display: grid;
+    grid-template-columns: 1fr 410px;
+    grid-template-areas: "logo image" "main image";
+    background: url("/images/bg-pattern-desktop.svg") no-repeat;
+  }
+  section .logo {
+    grid-area: logo;
+  }
+  section .woman {
+    grid-area: image;
+  }
+  section article {
+    grid-area: main;
+    background: none;
+  }
+  section .test {
+    padding: 0 8rem;
+  }
+}
+@media (min-width: 1440px) {
+  section {
+    grid-template-columns: 1fr 610px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

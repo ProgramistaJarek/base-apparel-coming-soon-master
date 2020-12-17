@@ -11,7 +11,7 @@
   <title>Frontend Mentor | Base Apparel coming soon page</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <script src="/script/email.js"></script>
   <link rel="stylesheet" href="/style/style.css">
   <style>
     .attribution {
@@ -28,19 +28,19 @@
 <body>
 
   <section>
-    <div class="logo">
+    <div class="logo test">
       <img src="/images/logo.svg" alt="logo">
     </div>
     <div class="woman"></div>
-    <article>
+    <article class="test">
       <h1>We're <br><strong>coming <br>soon</strong></h1>
 
       <p>Hello fellow shoppers! We're currently building our new fashion store.
         Add your email below to stay up-to-date with announcements and our launch deals.</p>
 
       <form>
-        <input type="text" placeholder="Email Address">
-        <button><img src="/images/icon-arrow.svg" alt="arrow"></button>
+        <input type="text" name="email" id="email" placeholder="Email Address">
+        <button type="button"><img src="/images/icon-arrow.svg" alt="arrow"></button>
       </form>
     </article>
   </section>

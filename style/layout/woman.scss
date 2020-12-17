@@ -3,3 +3,23 @@
   min-height: 250px;
   background-size: cover;
 }
+
+@media (min-width: 768px) {
+  .woman {
+    min-height: 350px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .woman {
+    background: url("/images/hero-desktop.jpg") no-repeat;
+    background-size: cover;
+    min-height: 600px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .woman {
+    min-height: 800px;
+  }
+}

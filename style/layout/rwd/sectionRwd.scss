@@ -1,0 +1,30 @@
+@media (min-width: 1024px) {
+  section {
+    display: grid;
+    grid-template-columns: 1fr 410px;
+    grid-template-areas:
+      "logo image"
+      "main image";
+    background: url("/images/bg-pattern-desktop.svg") no-repeat;
+
+    .logo {
+      grid-area: logo;
+    }
+    .woman {
+      grid-area: image;
+    }
+    article {
+      grid-area: main;
+      background: none;
+    }
+    .test{
+      padding: 0 8rem;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  section {
+    grid-template-columns: 1fr 610px;
+  }
+}

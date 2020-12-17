@@ -3,6 +3,9 @@
 
 @import './base/reset';
 
+@import './layout/base';
+
 @import './layout/logo';
 @import './layout/woman';
 @import './layout/article';
+@import './layout/rwd/sectionRwd';
