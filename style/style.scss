@@ -1,11 +1,11 @@
-@import './utilities/variables';
-@import './utilities/mixins';
+@import "./utilities/variables.scss";
+@import "./utilities/mixins.scss";
 
-@import './base/reset';
+@import "./base/reset.scss";
 
-@import './layout/base';
+@import "./layout/base.scss";
 
-@import './layout/logo';
-@import './layout/woman';
-@import './layout/article';
-@import './layout/rwd/sectionRwd';
+@import "./layout/logo.scss";
+@import "./layout/woman.scss";
+@import "./layout/article.scss";
+@import "./layout/rwd/sectionRwd.scss";
