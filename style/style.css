@@ -80,7 +80,7 @@ article form {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 2rem 1.18rem;
+  margin: 2rem 1.18rem 0.5rem;
   width: calc(100% - 2.36rem);
   border: 1px solid #ce9797;
   border-radius: 2rem;
@@ -95,6 +95,9 @@ article form input:-webkit-autofill:active {
   -webkit-text-fill-color: black !important;
 }
 article form input[type=text] {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
   width: 100%;
   padding: 1rem;
   background: none;
@@ -104,7 +107,18 @@ article form input[type=text]:focus {
   outline: none;
 }
 article form input[type=text]::placeholder {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
   color: #ce9797;
+}
+article form .error {
+  align-items: center;
+  margin-right: 1rem;
+  display: none;
+}
+article form .active {
+  display: flex;
 }
 article form button {
   border: none;
@@ -112,6 +126,19 @@ article form button {
   width: 5rem;
   background: #f8bfbf;
   background: linear-gradient(135deg, #f8bfbf 0%, #ee8c8c 100%);
+}
+article .info {
+  color: #f47c57;
+  padding-left: 1rem;
+  font-size: 16px;
+  text-align: left;
+  display: none;
+}
+article .active {
+  display: block;
+}
+article .formErrorEmail {
+  border: 2px solid #f47c57;
 }
 
 @media (min-width: 1024px) {
@@ -128,7 +155,7 @@ article form button {
   }
   article form {
     justify-content: left;
-    margin: 2rem 0;
+    margin: 2rem 0 0.5rem;
     margin-right: 5rem;
     width: calc(100% - 5rem);
   }
@@ -150,6 +177,7 @@ article form button {
     grid-template-columns: 1fr 410px;
     grid-template-areas: "logo image" "main image";
     background: url("/images/bg-pattern-desktop.svg") no-repeat;
+    background-size: cover;
   }
   section .logo {
     grid-area: logo;
@@ -168,6 +196,7 @@ article form button {
 @media (min-width: 1440px) {
   section {
     grid-template-columns: 1fr 610px;
+    background-size: contain;
   }
 }
 

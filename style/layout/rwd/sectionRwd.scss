@@ -6,6 +6,7 @@
       "logo image"
       "main image";
     background: url("/images/bg-pattern-desktop.svg") no-repeat;
+    background-size: cover;
 
     .logo {
       grid-area: logo;
@@ -26,5 +27,6 @@
 @media (min-width: 1440px) {
   section {
     grid-template-columns: 1fr 610px;
+    background-size: contain;
   }
 }
