@@ -27,7 +27,7 @@ body {
   }
 }
 .woman {
-  background: url("/images/hero-mobile.jpg") no-repeat;
+  background: url("../images/hero-mobile.jpg") no-repeat;
   min-height: 250px;
   background-size: cover;
 }
@@ -39,7 +39,7 @@ body {
 }
 @media (min-width: 1024px) {
   .woman {
-    background: url("/images/hero-desktop.jpg") no-repeat;
+    background: url("../images/hero-desktop.jpg") no-repeat;
     background-size: cover;
     min-height: 600px;
   }
@@ -176,7 +176,7 @@ article .formErrorEmail {
     display: grid;
     grid-template-columns: 1fr 410px;
     grid-template-areas: "logo image" "main image";
-    background: url("/images/bg-pattern-desktop.svg") no-repeat;
+    background: url("../images/bg-pattern-desktop.svg") no-repeat;
     background-size: cover;
   }
   section .logo {
