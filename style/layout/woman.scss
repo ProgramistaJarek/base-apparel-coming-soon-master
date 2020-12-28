@@ -1,5 +1,5 @@
 .woman {
-  background: url("../images/hero-mobile.jpg") no-repeat;
+  background: url(../images/hero-mobile.jpg) no-repeat;
   min-height: 250px;
   background-size: cover;
 }
@@ -12,7 +12,7 @@
 
 @media (min-width: 1024px) {
   .woman {
-    background: url("../images/hero-desktop.jpg") no-repeat;
+    background: url(../images/hero-desktop.jpg) no-repeat;
     background-size: cover;
     min-height: 600px;
   }
